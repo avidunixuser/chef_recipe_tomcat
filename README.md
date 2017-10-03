@@ -92,7 +92,7 @@ Test Summary: 1 successful, 0 failures, 0 skipped
        Finished verifying <default-centos-73> (0m0.40s).
 
 
-$ kitchen exec -c 'curl localhost:8080'
+$ kitchen exec -c 'curllocalhost:8080'
 
 The above command will execute the jsp from /opt/tomcat/webapps/manager/WEB-INF/jsp from the VM image.
 To login to VM image, execute 
