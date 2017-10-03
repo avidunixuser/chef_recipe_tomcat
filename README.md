@@ -6,7 +6,7 @@ TODO: Enter the cookbook description here.
 
 $ chef generate repo workshop-repo
 
-- Inspect what is the repo
+- Inspect what is in the repo
 
 $ cd workshop-repo
 
