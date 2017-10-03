@@ -98,6 +98,7 @@ $ kitchen exec -c 'curllocalhost:8080'
 # To login to VM image, execute -
 
 $ kitchen login
+
 $ su <super user passwd is vagrant>
 
 # Then follow the file path given above.
