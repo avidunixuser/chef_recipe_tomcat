@@ -111,7 +111,7 @@ Test Summary: 1 successful, 0 failures, 0 skipped
 
 # $ su 
 
-==> <super user passwd is vagrant>
+==> super user passwd is 'vagrant'
 
 ==> Then follow the file path given above.
 
