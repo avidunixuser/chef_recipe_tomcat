@@ -2,7 +2,7 @@
 
 TODO: Enter the cookbook description here.
 
-# Create a Repo
+Create a Repo
 
 # $ chef generate repo workshop-repo
 
@@ -37,7 +37,7 @@ drwxr-xr-x   4 user  staff   136 Sep 27 11:52 environments
 
 drwxr-xr-x   4 user  staff   136 Sep 27 14:23 roles
 
-# Generate a cookbook for tomcat
+==> Generate a cookbook for tomcat
 
 # $ chef generate cookbook tomcat
 
@@ -45,21 +45,21 @@ drwxr-xr-x   4 user  staff   136 Sep 27 14:23 roles
 
 drwxr-xr-x  17 user  staff   578 Oct  2 20:32 tomcat
 
-# Generate a configurable port to change it if tomcat cannot run on port 8080
+==> Generate a configurable port to change it if tomcat cannot run on port 8080
 
 # $ chef generate attribute tomcat port
 
 # $ cd tomcat
 
-# Generate a recipe to use server.rb script rather than default.rb
+==> Generate a recipe to use server.rb script rather than default.rb
 
 # $ chef generate recipe server
 
-# Generate a template to provide parameters for tomcat to start as a service
+==> Generate a template to provide parameters for tomcat to start as a service
 
 # $ chef generate template tomcat.service.erb
 
-# Files to inspect
+==> Files to inspect
 
 tomcat/.kitchen.yml - apwxidy driver and platform in particular
 tomcat/recipes/server.rb - default recipe to install the required components
@@ -67,15 +67,15 @@ tomcat/spec/unit/recipes/server_spec.rb - sanity check to ensure prerequisites
 tomcat/templates/tomcat.service.erb - template with all the environment variables, java and tomcat runtime input parameters
 tomcat/attributes/port.rb - custom/configurable port for tomcat in case 8080 is busy
 
-# Rest of the files under tomcat directory are untouched.
+==> Rest of the files under tomcat directory are untouched.
 
-# Execute the bookbook - be in a tomcat directory or
+==> Execute the bookbook - be in a tomcat directory or
 
 # $ cd tomcat
 
 # $ kitchen converge
 
-# To test the running state of tomcat server
+==> To test the running state of tomcat server
 
 # $ kitchen verify
 
@@ -101,18 +101,18 @@ Port 8080
 Test Summary: 1 successful, 0 failures, 0 skipped
      Finished verifying <default-centos-73> (0m0.40s).
 
-# The following command will execute the jsp from /opt/tomcat/webapps/manager/WEB-INF/jsp from the VM image.
+==> The following command will execute the jsp from /opt/tomcat/webapps/manager/WEB-INF/jsp from the VM image.
 
 # $ kitchen exec -c 'curl localhost:8080'
 
-# To login to VM image, execute -
+==> To login to VM image, execute -
 
 # $ kitchen login
 
 # $ su <super user passwd is vagrant>
 
-# Then follow the file path given above.
+==> Then follow the file path given above.
 
-# This concludes the creation and execution of a Chef cookbook to install Tomcat 8.5.23 with openjdk-1.8.0
+==> This concludes the creation and execution of a Chef cookbook to install Tomcat 8.5.23 with openjdk-1.8.0
 
-# Thank you and happy cooking! :)
+==> Thank you and happy cooking! :)
