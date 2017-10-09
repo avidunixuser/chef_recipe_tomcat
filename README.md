@@ -6,25 +6,35 @@ TODO: Enter the cookbook description here.
 
 # $ chef generate repo workshop-repo
 
-# Inspect what is in the repo
-
 # $ cd workshop-repo
 
 # $ ls -la
 
 total 56
 drwxr-xr-x  14 user  staff   476 Sep 27 15:58 .
+
 drwxr-xr-x+ 79 user  staff  2686 Oct  2 20:32 ..
+
 -rw-r--r--@  1 user  staff  6148 Sep 27 12:40 .DS_Store
+
 -rw-r--r--   1 user  staff   255 Sep 27 11:52 .chef-repo.txt
+
 drwxr-xr-x  10 user  staff   340 Oct  2 20:32 .git
+
 -rw-r--r--   1 user  staff  2121 Sep 27 11:52 .gitignore
+
 -rw-r--r--   1 user  staff    70 Sep 27 11:52 LICENSE
+
 -rw-r--r--   1 user  staff  1499 Sep 27 11:52 README.md
+
 -rw-r--r--   1 user  staff  1133 Sep 27 11:52 chefignore
+
 drwxr-xr-x   4 user  staff   136 Sep 27 11:52 cookbooks
+
 drwxr-xr-x   4 user  staff   136 Sep 27 11:52 data_bags
+
 drwxr-xr-x   4 user  staff   136 Sep 27 11:52 environments
+
 drwxr-xr-x   4 user  staff   136 Sep 27 14:23 roles
 
 # Generate a cookbook for tomcat
