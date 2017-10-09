@@ -101,19 +101,13 @@ Port 8080
 Test Summary: 1 successful, 0 failures, 0 skipped
      Finished verifying <default-centos-73> (0m0.40s).
 
-==> The following command will execute the jsp from /opt/tomcat/webapps/manager/WEB-INF/jsp from the VM image.
+==> Check if Tomcat is running by executing following command
 
 # $ kitchen exec -c 'curl localhost:8080'
 
 ==> To login to VM image, execute -
 
 # $ kitchen login
-
-# $ su 
-
-==> super user passwd is 'vagrant'
-
-==> Then follow the file path given above.
 
 ==> This concludes the creation and execution of a Chef cookbook to install Tomcat 8.5.23 with openjdk-1.8.0
 
