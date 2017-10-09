@@ -109,7 +109,9 @@ Test Summary: 1 successful, 0 failures, 0 skipped
 
 # $ kitchen login
 
-# $ su <super user passwd is vagrant>
+# $ su 
+
+==> <super user passwd is vagrant>
 
 ==> Then follow the file path given above.
 
